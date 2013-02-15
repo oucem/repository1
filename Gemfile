@@ -1,12 +1,10 @@
 source 'https://rubygems.org'
-
+require 'rubygems'
+require 'mongo'
 gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -25,6 +23,27 @@ gem 'jquery-rails'
 gem 'execjs'
 
 gem 'therubyracer'
+###################14/02/2013//////////// 09:07
+
+group :development do
+  gem 'rspec-rails', '2.5.0'
+end
+
+group :test do
+  gem 'rspec', '2.5.0'
+  gem 'webrat', '0.7.1'
+end
+#####################################/////15:34
+gem 'genghisapp'
+gem 'bson_ext'
+gem "mongoid", "~> 3.0.0"
+gem "mongo_mapper"
+##############14/02############17:44
+gem "warden", "~> 1.2.1"
+gem "devise", "~> 2.2.3"
+gem "railties", "~> 3.2.12"
+gem "orm_adapter", "~> 0.4.0"
+gem "bcrypt-ruby", "~> 3.0.1"
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
